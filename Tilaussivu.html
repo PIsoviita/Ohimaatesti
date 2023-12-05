@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tilaussivu.css">
+</head>
+<body>
+  <main>
+    <script>
+    const funct = () => {
+        console.log(document.getElementById("named").value + " " + document.getElementById("unnamed").value + ("|") + document.getElementById("phone").value + " " + document.getElementById("mail").value
+        + ("|") + document.getElementById("address").value + " " + document.getElementById("adres").value + ("|") + document.getElementById("city").value + " " + document.getElementById("post").value + ("|") + document.getElementById("day").value 
+        + " " + document.getElementById("berry").value)
+    }
+    </script>
+     <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="tuotesivu.html">Tuotteet</a></li>
+        <li><a href="Tilaussivu.html">Tilaus</a></li>
+        <li><a href="Yhteyssivu.html">Yhteystiedot</a></li>
+</ul>
+    <h2>Tilaukset toimitetaan Raahen alueella maa-
+        <br>
+        nantaisin ja keskiviikkoisin kello 15-18 ja
+        <br> 
+        Oulaisten alueella tiistaisin ja torstaisin 
+        kello 15-18. 
+        <br>Otamme yhteyttä teihin puhel-
+        <br>
+        imitse ja varmistamme sopivan ajan.
+        <br> Jos tahdotte peruuttaa tai muuttaa
+        <br> jo tehtyä 
+        tilausta, lähettäkää sähköpostia osoittee-
+        <br> 
+        seen ohimaanmarjatila@gmail.com</h2>
+        <form>
+            <div id="nimi">
+                <input id="named" required placeholder="Etunimi" type="text" name="EN">
+            <input id="unnamed" required placeholder="Sukunimi" type="text" name="SN"></div>
+            <div id="puhelin">
+            <input id="phone" required placeholder="Puhelinnumero" type="text" name="PN">
+            <input id="mail" required placeholder="Email" type="text" name="EM"></div>
+            <div id="osoite">
+                <input id="address" placeholder="Osoite" type="text" name="OS">
+                <input id="adres" placeholder="Osoite 2" type="text" name="OS2">
+            </div>
+            <div id="info">
+                <input id="city" placeholder="Kaupunki" type="text" name="KAU">
+                <input id="post" placeholder="Postiosoite" type="text" name="POST">
+            </div>
+            <div id="tilaus">
+            <input id="day" placeholder="Tilauksen päivä" type="text" name="TIL">
+            <select id="berry" placeholder="Tilatut marjat" name="MAR">
+            <option>Mansikka</option>
+            <option>Mustikka</option>
+            <option>Vadelma</option>
+            <option>Karhunvadelma</option>
+            <option>Mustaherukka</option>
+            </div>
+            <input type="button" name="TILA" onclick="funct()" value="Tilaa">
+        </form>
+    </main>
+    </body>
+</html>

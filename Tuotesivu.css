@@ -1,0 +1,54 @@
+body {
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+    margin-left: 430%;
+    background-color: limegreen;
+    opacity: 60%;
+    width: fit-content;
+    align-self: center;
+    padding: 10%;
+}
+
+ h2 {
+    text-align: center;
+    background-color: limegreen;
+    opacity: 60%;
+    width: fit-content;
+    align-self: center;
+    margin-left: 430%;
+    padding:10%
+ }
+
+h2:hover {
+  opacity: 80%;
+  color: 28,53,45;
+}
+
+  header {
+    background-color: limegreen;
+    opacity: 60%;
+    height: 100px;
+  }
+   li{
+    background-color: limegreen;
+    opacity: 60%;
+    width: 11%;
+    text-align: left;
+   }
+
+   li:hover {
+    color:blueviolet
+   }
+  body {
+    background-image: url("136150-mix-bowl-berry-download-free-image.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 3000px;
+  }
+  p {
+    text-align: center;
+    margin-left: 430%;
+  }
